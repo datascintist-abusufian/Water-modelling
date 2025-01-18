@@ -10,3 +10,23 @@ This repository contains the code and data for the Bayesian-hydrodynamic modelli
 1. Clone the repository:
    ```bash
    git clone https://github.com/datascintist-abusufian/Bayesian-Hydrodynamic-Modeling.git
+
+
+Bayesian-Hydrodynamic-Modeling/
+│
+├── data/                   # Folder for datasets
+│   ├── flow_velocity.csv
+│   ├── sediment_concentration.csv
+│   └── sediment_transport_rate.csv
+│
+├── scripts/                # Folder for Python scripts
+│   ├── bayesian_model.py
+│   ├── hydrodynamic_model.py
+│   └── visualization.py
+│
+├── results/                # Folder for output results
+│   ├── posterior_plots.png
+│   └── sediment_predictions.csv
+│
+├── README.md               # Project documentation
+└── requirements.txt        # List of Python dependencies
