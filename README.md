@@ -30,3 +30,13 @@ Bayesian-Hydrodynamic-Modeling/
 │
 ├── README.md               # Project documentation
 └── requirements.txt        # List of Python dependencies
+
+
+
+
+---
+
+### Sharing Your Project
+Once your project is hosted on one of these platforms, you can share the link with collaborators or in your manuscript. For example:
+- **GitHub**: `https://github.com/datascintist-abusufian/Bayesian-Hydrodynamic-Modeling`
+- **Zenodo**: `https://doi.org/10.5281/zenodo.1234567`
