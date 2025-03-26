@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600">
+  <!-- Background -->
+  <rect width="800" height="600" fill="#f9f9f9"/>
+  
+  <!-- Title -->
+  <text x="400" y="40" font-family="Arial" font-size="20" text-anchor="middle" font-weight="bold">Model Results: Bed Scour, Bank Erosion, and Sediment Transport</text>
+  
+  <!-- River cross-section background -->
+  <path d="M50 250 C150 270, 300 380, 420 400 C550 420, 650 350, 750 300" stroke="#ddd" stroke-width="1" fill="none"/>
+  
+  <!-- Riverbed original profile -->
+  <path d="M50 300 C150 320, 300 430, 420 450 C550 470, 650 400, 750 350" stroke="#888" stroke-width="2" stroke-dasharray="5,5" fill="none"/>
+  <text x="100" y="310" font-family="Arial" font-size="12" fill="#555">Original riverbed</text>
+  
+  <!-- Riverbed after scour -->
+  <path d="M50 300 C100 320, 180 440, 280 460 C350 465, 400 450, 420 450 C550 470, 650 400, 750 350" stroke="#0066cc" stroke-width="3" fill="none"/>
+  <text x="200" y="470" font-family="Arial" font-size="12" fill="#0066cc">Scoured riverbed</text>
+  
+  <!-- Bank erosion indicators -->
+  <path d="M280 250 L280 460" stroke="#cc0000" stroke-width="2" stroke-dasharray="5,3" fill="none"/>
+  <path d="M320 240 L280 460" stroke="#cc0000" stroke-width="2" fill="none"/>
+  <text x="335" y="245" font-family="Arial" font-size="12" fill="#cc0000" text-anchor="middle">Bank erosion</text>
+  <path d="M310 235 L335 235" stroke="#cc0000" stroke-width="2" marker-end="url(#arrowhead)" fill="none"/>
+  
+  <!-- Sediment transport indicators -->
+  <!-- Suspended load -->
+  <path d="M400 200 C450 190, 500 195, 550 210" stroke="#996633" stroke-width="2" fill="none"/>
+  <path d="M405 202 L415 195 L425 205 L435 193 L445 200 L455 190" stroke="#996633" stroke-width="1" fill="none"/>
+  <text x="475" y="180" font-family="Arial" font-size="12" fill="#996633">Suspended load</text>
+  
+  <!-- Bed load -->
+  <path d="M400 450 L550 465" stroke="#663300" stroke-width="8" fill="none"/>
+  <text x="475" y="485" font-family="Arial" font-size="12" fill="#663300">Bed load transport</text>
+  
+  <!-- Arrowhead for direction -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="0" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#cc0000"/>
+    </marker>
+  </defs>
+  
+  <!-- Observation points -->
+  <circle cx="150" cy="320" r="5" fill="#009900"/>
+  <circle cx="350" cy="450" r="5" fill="#009900"/>
+  <circle cx="550" cy="470" r="5" fill="#009900"/>
+  <circle cx="650" cy="400" r="5" fill="#009900"/>
+  <text x="140" y="345" font-family="Arial" font-size="12" fill="#009900">Observation points</text>
+  
+  <!-- Legend -->
+  <rect x="580" y="80" width="180" height="135" fill="white" stroke="#888" stroke-width="1"/>
+  <text x="600" y="100" font-family="Arial" font-size="14" font-weight="bold">Legend</text>
+  
+  <line x1="600" y1="115" x2="630" y2="115" stroke="#888" stroke-width="2" stroke-dasharray="5,5"/>
+  <text x="640" y="120" font-family="Arial" font-size="12">Original profile</text>
+  
+  <line x1="600" y1="140" x2="630" y2="140" stroke="#0066cc" stroke-width="3"/>
+  <text x="640" y="145" font-family="Arial" font-size="12">Modeled profile</text>
+  
+  <line x1="600" y1="165" x2="630" y2="165" stroke="#cc0000" stroke-width="2"/>
+  <text x="640" y="170" font-family="Arial" font-size="12">Bank erosion</text>
+  
+  <line x1="600" y1="190" x2="630" y2="190" stroke="#996633" stroke-width="2"/>
+  <text x="640" y="195" font-family="Arial" font-size="12">Sediment transport</text>
+  
+  <!-- Parameter information -->
+  <rect x="50" y="500" width="700" height="80" fill="white" stroke="#888" stroke-width="1"/>
+  <text x="60" y="520" font-family="Arial" font-size="14" font-weight="bold">Model Parameters:</text>
+  <text x="60" y="540" font-family="Arial" font-size="12">• Chezy friction coefficient: Calibrated to match observed data</text>
+  <text x="60" y="560" font-family="Arial" font-size="12">• Median grain size: 0.14 mm</text>
+  <text x="400" y="540" font-family="Arial" font-size="12">• Transport formula: Van Rijn (suspended and bed load)</text>
+  <text x="400" y="560" font-family="Arial" font-size="12">• Error margin: < 3% in sediment transport rates</text>
+</svg>
